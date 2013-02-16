@@ -8,8 +8,22 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface DCAppDelegate : NSObject <NSApplicationDelegate>
+@class TerminalTab;
+
+@interface DCAppDelegate : NSObject <NSApplicationDelegate> {
+    
+    NSStatusItem *statusItem;
+    
+    TerminalTab *currentTerminalTab;
+}
 
 @property (assign) IBOutlet NSWindow *window;
+
+
+@property (assign) IBOutlet NSMenu *statusMenu;
+
+
+
+-(IBAction)makeMe:(id)sender;
 
 @end

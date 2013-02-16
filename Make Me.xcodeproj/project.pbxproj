@@ -17,6 +17,8 @@
 		9C0DA2AE15DB49040019B435 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0DA28E15DB49040019B435 /* Cocoa.framework */; };
 		9C0DA2B615DB49040019B435 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9C0DA2B415DB49040019B435 /* InfoPlist.strings */; };
 		9C0DA2B915DB49040019B435 /* Make_MeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0DA2B815DB49040019B435 /* Make_MeTests.m */; };
+		9C0DA2C415DB4B3A0019B435 /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0DA2C315DB4B3A0019B435 /* ScriptingBridge.framework */; };
+		9C0DA2CB15DC68180019B435 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0DA2CA15DC68180019B435 /* Carbon.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,11 @@
 		9C0DA2B515DB49040019B435 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9C0DA2B715DB49040019B435 /* Make_MeTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Make_MeTests.h; sourceTree = "<group>"; };
 		9C0DA2B815DB49040019B435 /* Make_MeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Make_MeTests.m; sourceTree = "<group>"; };
+		9C0DA2C215DB49F10019B435 /* Terminal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Terminal.h; sourceTree = "<group>"; };
+		9C0DA2C315DB4B3A0019B435 /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = System/Library/Frameworks/ScriptingBridge.framework; sourceTree = SDKROOT; };
+		9C0DA2C815DB5AD50019B435 /* BBEdit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBEdit.h; sourceTree = "<group>"; };
+		9C0DA2C915DB5AD50019B435 /* SystemEvents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemEvents.h; sourceTree = "<group>"; };
+		9C0DA2CA15DC68180019B435 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +63,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C0DA2CB15DC68180019B435 /* Carbon.framework in Frameworks */,
+				9C0DA2C415DB4B3A0019B435 /* ScriptingBridge.framework in Frameworks */,
 				9C0DA28F15DB49040019B435 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -94,6 +103,8 @@
 		9C0DA28D15DB49030019B435 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9C0DA2CA15DC68180019B435 /* Carbon.framework */,
+				9C0DA2C315DB4B3A0019B435 /* ScriptingBridge.framework */,
 				9C0DA28E15DB49040019B435 /* Cocoa.framework */,
 				9C0DA2AC15DB49040019B435 /* SenTestingKit.framework */,
 				9C0DA29015DB49040019B435 /* Other Frameworks */,
@@ -117,6 +128,7 @@
 				9C0DA2A015DB49040019B435 /* DCAppDelegate.h */,
 				9C0DA2A115DB49040019B435 /* DCAppDelegate.m */,
 				9C0DA2A315DB49040019B435 /* MainMenu.xib */,
+				9C0DA2C515DB4CC90019B435 /* ScriptingBridge */,
 				9C0DA29515DB49040019B435 /* Supporting Files */,
 			);
 			path = "Make Me";
@@ -151,6 +163,16 @@
 				9C0DA2B415DB49040019B435 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9C0DA2C515DB4CC90019B435 /* ScriptingBridge */ = {
+			isa = PBXGroup;
+			children = (
+				9C0DA2C215DB49F10019B435 /* Terminal.h */,
+				9C0DA2C815DB5AD50019B435 /* BBEdit.h */,
+				9C0DA2C915DB5AD50019B435 /* SystemEvents.h */,
+			);
+			name = ScriptingBridge;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
